@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Betika-TestSuite,,,,2023-04-12 01:32:14,2023-04-12 01:32:18,3.780s,PASSED
+,,,,,,,
+Test Cases/BetikaTC,,,,2023-04-12 01:32:14,2023-04-12 01:32:18,3.552s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/Betika""))",,Request and Response,,2023-04-12 01:32:14,2023-04-12 01:32:18,3.083s,PASSED
+"status = verifyResponseStatusCode(response, 200)",,2.Verify the api has a response code of 200,,2023-04-12 01:32:18,2023-04-12 01:32:18,0.011s,PASSED
+"verifyElementPropertyValue(response, ""[5].userName"", ""User 6"")",,3.Verify ‘User 6’ is present in the response,,2023-04-12 01:32:18,2023-04-12 01:32:18,0.050s,PASSED
+"objectCount = getElementsCount(response, ""userName"")",,4. Number of Objects,,2023-04-12 01:32:18,2023-04-12 01:32:18,0.025s,PASSED
+"comment(""There are - "" + objectCount + "" object in the api response"")",,,,2023-04-12 01:32:18,2023-04-12 01:32:18,0.034s,PASSED
